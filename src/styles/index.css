@@ -1,24 +1,22 @@
 header {
     background: url("../../public/assets/techbg.gif");
-    height: 500px;
+    height: 600px;
     background-size: cover;
 }
-
-body {
-    background-color: black;
+#body {
+    background-color:#000;
+    height: 100vh;
 }
-
 section {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 3fr;
-    height: 400px;
+    height: 450px;
     padding: 20px;
-    margin-top: -100px;
+    margin-top: -150px;
 }
-
 .box {
     background-color: #fff;
-    box-shadow: 4px 4px 4px #fff;
+    box-shadow: 6px 6px 6px #fff;
     margin: 10px;
     padding: 5px;
     display: flex;
@@ -26,7 +24,50 @@ section {
     align-items: center;
     justify-content: space-between;
 }
-
-a:hover {
+.fs-5{
+    color: white;
+    text-decoration: none;
+}
+a{
     cursor: pointer;
 }
+.card-img-top{
+    height: 130px;
+}
+#refresh{
+    background-color: #000;
+    color: #fff;
+}
+footer{
+    font-family: Arial;
+    display: grid;
+    grid-template-columns:6fr 6fr ;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    
+}
+.left-panel{
+    display: grid;
+    grid-template-columns:1.5fr 1.5fr 1.5fr 1.5fr ;
+}
+.right-panel{
+    border-left: dotted 1px white;
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+}
+.social span:hover{
+ background-color: rgb(255, 255, 255);
+color: black;
+    }
+.social span{
+margin-right: 5px;
+color: red;
+}
+.sticky{
+display: flex;
+justify-content: center;
+align-items: end;
+}
+
+  

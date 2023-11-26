@@ -19,18 +19,19 @@
     <script src="./src/scripts/index.js"></script>
 </head>
 
-<body class="container-fluid">
-    <header>
+<body id="body" class="container-fluid">
+    <header id="home">
         <nav class="p-2 text-white d-flex justify-content-between">
-            <div class="h2">Tech Videos</div>
+            <div class="h2" ><button id="refresh" onClick="window.location.reload();">Tech Videos</button></div>
             <div>
-                <span class="me-4"><a>Home</a></span>
-                <span class="me-4"><a>Videos</a></span>
-                <span class="me-4"><a>About</a></span>
-                <span class="me-4"><a>Contact</a></span>
+                <a href="#home" class="me-4 fw-bold fs-5"><span >Home</span></a>
+                <a href="#videos" class="me-4 fw-bold fs-5"><span >Videos</span></a>
+                <a href="#about" class="me-4 fw-bold fs-5"><span >About</span></a>
+                <a href="#contact" class="me-4 fw-bold fs-5"><span >Contact</span></a>
+               
             </div>
             <div class="fs-5">
-                <span class="bi bi-person-fill"><a id="signin">Signin</a></span>
+                <span class="bi bi-person-fill fw-bold"><a id="signin">Signin</a></span>
             </div>
         </nav>
         <div class="text-center text-white d-flex justify-content-center">
@@ -53,14 +54,14 @@
             </div>
         </div>
     </header>
-    <section>
+    <section id="videos">
         <div class="box">
             <img src="./public/assets/card1.jpg" alt="" class="card-img-top">
             <div class="card-body fw-bold text-center">JavaScript is a scripting language. Java script was first known
                 as LiveScript, but later Netscape changed it to JavaScript. It is the most popular scripting language
                 and used on Internet, also it works with all the web browser.</div>
-            <div class="card-footer mt-2">
-                <button class="btn btn-dark w-100">Join Course</button>
+            <div class="card-footer mt-1">
+                <button class="btn btn-dark w-100 fw-bold">Join Course</button>
             </div>
         </div>
         <div class="box">
@@ -68,8 +69,8 @@
             <div class="card-body text-center fw-bold">React JS is a javascript library mainly used for building a user
                 interface. React is widely used for building single-page applications. React JS and React Native are the
                 two technologies that are being used widely development of web and mobile.</div>
-            <div class="card-footer mt-2">
-                <button class="btn btn-dark w-100">Join Course</button>
+            <div class="card-footer mt-1">
+                <button class="btn btn-dark w-100 fw-bold">Join Course</button>
             </div>
         </div>
         <div class="box">
@@ -77,8 +78,8 @@
             <div class="card-body text-center fw-bold">Angular 4 is used for developed web apps. It is free to use. It
                 is the most used JavaScript framework. Angular 4 is the latest version of the Angular framework. To
                 learn Angular 4 it is not mandatory to learn any angular script.</div>
-            <div class="card-footer mt-2">
-                <button class="btn btn-dark w-100">Join Course</button>
+            <div class="card-footer mt-1">
+                <button class="btn btn-dark w-100 fw-bold">Join Course</button>
             </div>
         </div>
         <div class="box">
@@ -86,11 +87,57 @@
             <div class="card-body fw-bold text-center">NodeJS is a very powerful platform built on Chrome’s JavaScript.
                 It is an open source and supports different platform. It helps in developing Web Server Application. It
                 is an event-driven server side. This runs using the V8 engine developed by Google.</div>
-            <div class="card-footer mt-2">
-                <button class="btn btn-dark w-100">Join Course</button>
+            <div class="card-footer mt-1">
+                <button class="btn btn-dark w-100 fw-bold">Join Course</button>
             </div>
         </div>
     </section>
+    <footer class="container-fluid" style="font-size:12px;">
+        <div class="left-panel" id="about">
+            <div>
+                <div class="About"><h4>About</h4></div>
+                <div>Contact Us</div>
+                <div>About Us</div>
+                <div>press</div>
+                <div>Careers</div>
+            </div>
+            <div>
+                <div class="Help"><h4>Help</h4></div>
+                <div>Become a creator</div>
+                <div>About Us</div>
+                <div>Complain</div>
+            </div>
+            <div>
+                <div class="Policy"><h4>Policy</h4></div>
+                <div>Contact Us</div>
+                <div>Video's Complaint</div>
+                <div>Instruction and Rules</div>
+            </div>            
+            <div>
+                <div class="Social"><h4>Social</h4></div>
+                <div>Contact Us</div>
+                <div>About Us</div>
+                <div>Corporate Information</div>
+            </div>            
+        </div>
+        <div class="right-panel">
+            <div class="me-2">
+                <div class="Mail"><h4>&nbsp;&nbsp;&nbsp;&nbsp;Mail Us</h4></div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;info@Videolibrary.in</div>
+            </div>
+            <div>
+                <div id="contact" class="address"><h4>Registered Office Address</h4></div>
+                <div>Tech Videos Pvt Ltd Based in Kolkata a Dynamic Modern Library located at 312, Sree Balaji Business Park, Badu Road, esplanade-700024.</div>
+            </div>
+            <div class="sticky">
+            <nav class="social">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-skype"></span>
+            </nav>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
