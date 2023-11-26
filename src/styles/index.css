@@ -1,0 +1,32 @@
+header {
+    background: url("../../public/assets/techbg.gif");
+    height: 500px;
+    background-size: cover;
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    height: 400px;
+    padding: 20px;
+    margin-top: -100px;
+}
+
+.box {
+    background-color: #fff;
+    box-shadow: 4px 4px 4px #fff;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a:hover {
+    cursor: pointer;
+}
