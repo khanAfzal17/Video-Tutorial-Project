@@ -9,7 +9,7 @@ function LoadPage(PageName) {
 }
 $(function () {
     $("#passwordContainer").hide();
-z
+
     $("#signin").click(() => {
         LoadPage("user-login.html");
     })
