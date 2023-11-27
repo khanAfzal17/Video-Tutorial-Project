@@ -70,7 +70,6 @@ $(function () {
         LoadCategories();
     })
     $(document).on("click", "#btnAddVideo", () => {
-        $("section").hide();
         var video = {
             VideoId: $("#VideoId").val(),
             Title: $("#Title").val(),
@@ -90,7 +89,6 @@ $(function () {
     })
     var id;
     $(document).on("click", "#btnEdit", (e) => {
-         $("section").hide();
         LoadPage('admin-edit-video.html')
         LoadCategories();
         id = parseInt(e.target.name);
@@ -112,7 +110,6 @@ $(function () {
         LoadVideos();
     })
     $(document).on("click", "#btnUpdateVideo", () => {
-      $("section").hide();
         var video = {
             VideoId: $("#VideoId").val(),
             Title: $("#Title").val(),
@@ -139,7 +136,6 @@ $(function () {
                 url: `http://127.0.0.1:6600/deletevideo/${id}`,
             })
             alert("Video Deleted Successfully");
-            $("section").hide();
             LoadPage("admin-dashboard.html");
             LoadVideos();
         }
