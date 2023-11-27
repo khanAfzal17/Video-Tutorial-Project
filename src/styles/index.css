@@ -31,7 +31,7 @@ section {
 .admin{
     cursor: pointer;
     color: white;
-    text-decoration: none;
+    text-decoration:none;
 }
 .card-img-top{
     height: 130px;
