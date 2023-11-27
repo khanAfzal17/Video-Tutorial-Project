@@ -65,7 +65,6 @@ $(function () {
         })
     }
     $(document).on("click", "#btnAddNew", () => {
-        $("section").hide();
         LoadPage(`admin-add-video.html`);
         LoadCategories();
     })
