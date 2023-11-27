@@ -43,6 +43,7 @@ $(function () {
                 if (user.UserId == $("#LoginUserId").val() && user.Password == $("#LoginPassword").val()) {
                     LoadPage("admin-dashboard.html");
                     $("#btnSignIn").html(`${user.UserName}-Signout`);
+                    $("section").hide();
                     LoadVideos();
 
                 } else {
